@@ -5,10 +5,75 @@
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [],
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-патч",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Спрайт",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Текст",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Карта тайлов",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Направлений",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "[Bound to]",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Следить за",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Твёрдый",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
 	"uniqueId": "ycyk7d93nkg",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"PlayerBox",
+			"Entity",
+			"DialogPanelTop",
+			"DialogPanelBottom",
+			"DialogTextTop",
+			"DialogTextBottom",
+			"TileMap"
+		],
 		"subfolders": []
 	},
 	"functionsName": "Функции",
@@ -34,15 +99,74 @@
 		"script": {
 			"items": [
 				{
-					"name": "основной.js",
+					"name": "main.js",
 					"type": "application/javascript",
-					"sid": 294182926803961,
+					"sid": 222185042910031,
 					"script-info": {
-						"purpose": "main"
+						"purpose": "none"
 					}
 				}
 			],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "input.js",
+							"type": "application/javascript",
+							"sid": 572483954122565,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "inventory.js",
+							"type": "application/javascript",
+							"sid": 558909080956635,
+							"script-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "components"
+				},
+				{
+					"items": [
+						{
+							"name": "actions.js",
+							"type": "application/javascript",
+							"sid": 712167669577249,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "states.js",
+							"type": "application/javascript",
+							"sid": 621924046284137,
+							"script-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "config"
+				},
+				{
+					"items": [
+						{
+							"name": "Interactable.js",
+							"type": "application/javascript",
+							"sid": 205091584152147,
+							"script-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Entities"
+				}
+			]
 		},
 		"sound": {
 			"items": [],
@@ -144,9 +268,7 @@
 		}
 	},
 	"timelines": {
-		"items": [
-			"Шкала 1"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [],
@@ -220,7 +342,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
+	"viewportWidth": 1704,
+	"viewportHeight": 956,
 	"firstLayout": null
 }

@@ -1,0 +1,23 @@
+// Для работы с клавишами и вводом.
+
+export class InputSystem {
+    constructor() {
+        this.pressed = {};
+        // Конфиг клавиш, который легко изменить динамически
+        this.keys = {
+            up: "KeyW",
+            down: "KeyS",
+            left: "KeyA",
+            right: "KeyD",
+            interact: "KeyE",
+            exit: "KeyX"
+        };
+
+        window.addEventListener("keydown", e => this.pressed[e.code] = true);
+        window.addEventListener("keyup", e => this.pressed[e.code] = false);
+    }
+
+    is(action) {
+        return !!this.pressed[this.keys[action]];
+    }
+}
