@@ -20,6 +20,11 @@
 			"behaviorId": "bound",
 			"name": "BoundTo",
 			"sid": 845307898454067
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Твёрдый",
+			"sid": 862707601387649
 		}
 	],
 	"effectTypes": [],

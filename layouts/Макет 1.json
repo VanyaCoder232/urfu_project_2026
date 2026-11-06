@@ -27,9 +27,9 @@
 						},
 						"8Направлений": {
 							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
+								"max-speed": 0,
+								"acceleration": 0,
+								"deceleration": 0,
 								"directions": "dir-8",
 								"set-angle": "no",
 								"allow-sliding": true,
@@ -41,6 +41,13 @@
 							"properties": {
 								"bound-by": "edge",
 								"region": "layout"
+							}
+						},
+						"Твёрдый": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
 							}
 						}
 					},
@@ -216,7 +223,7 @@
 						"fill": "stretch",
 						"image-scale-x": 1,
 						"image-scale-y": 1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"seams": "overlap"
 					},
@@ -256,7 +263,7 @@
 						"fill": "stretch",
 						"image-scale-x": 1,
 						"image-scale-y": 1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"seams": "overlap"
 					},
@@ -306,7 +313,7 @@
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"read-aloud": false
 					},
@@ -356,7 +363,7 @@
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"read-aloud": false
 					},

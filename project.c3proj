@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Клавиатура",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "NinePatch",
 			"name": "9-патч",
 			"author": "Scirra",
@@ -72,7 +79,8 @@
 			"DialogPanelBottom",
 			"DialogTextTop",
 			"DialogTextBottom",
-			"TileMap"
+			"TileMap",
+			"Клавиатура"
 		],
 		"subfolders": []
 	},
@@ -103,21 +111,13 @@
 					"type": "application/javascript",
 					"sid": 222185042910031,
 					"script-info": {
-						"purpose": "none"
+						"purpose": "main"
 					}
 				}
 			],
 			"subfolders": [
 				{
 					"items": [
-						{
-							"name": "input.js",
-							"type": "application/javascript",
-							"sid": 572483954122565,
-							"script-info": {
-								"purpose": "none"
-							}
-						},
 						{
 							"name": "inventory.js",
 							"type": "application/javascript",
@@ -133,7 +133,7 @@
 				{
 					"items": [
 						{
-							"name": "actions.js",
+							"name": "interact.js",
 							"type": "application/javascript",
 							"sid": 712167669577249,
 							"script-info": {

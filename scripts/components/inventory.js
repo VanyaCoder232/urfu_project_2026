@@ -21,4 +21,31 @@ export class Inventory {
             playerStats.equippedWeapon = item; // Экипируем оружие
         }
     }
+
+    // Метод добавления предмета
+    add(item) {
+        // item: { id: "toy_knife", name: "Игрушечный нож", type: "weapon", value: 5 }
+        this.items.push(item);
+        console.log(`Добавлен предмет: ${item.name}. Всего в инвентаре:`, this.items);
+        
+        // Сюда можно добавить вызов функции Construct 3, 
+        // которая визуально обновит UI инвентаря на экране
+        // runtime.callFunction("UpdateInventoryUI");
+    }
+
+    // Метод проверки наличия предмета (например, для квестов или дверей)
+    has(itemId) {
+        return this.items.some(item => item.id === itemId);
+    }
+
+    // Метод удаления предмета
+    remove(itemId) {
+        const index = this.items.findIndex(item => item.id === itemId);
+        if (index !== -1) {
+            this.items.splice(index, 1);
+        }
+    }
 }
+
+
+globalThis.Inventory = new Inventory();

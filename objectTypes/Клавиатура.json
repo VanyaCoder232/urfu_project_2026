@@ -1,0 +1,12 @@
+{
+	"name": "Клавиатура",
+	"plugin-id": "Keyboard",
+	"sid": 978891337849211,
+	"singleglobal-inst": {
+		"type": "Клавиатура",
+		"properties": {},
+		"uid": 9,
+		"sid": 275621244301297,
+		"tags": ""
+	}
+}

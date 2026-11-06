@@ -1,5 +1,324 @@
 {
 	"name": "Список событий 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "PLAYER_SPEED_NORMAL",
+			"type": "number",
+			"initialValue": "8",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 805580364660917
+		},
+		{
+			"eventType": "variable",
+			"name": "PLAYER_SPEED_FASTED",
+			"type": "number",
+			"initialValue": "16",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 398711116533398
+		},
+		{
+			"eventType": "variable",
+			"name": "PLAYER_SPEED_CURRENT",
+			"type": "number",
+			"initialValue": "8",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 390746952391451
+		},
+		{
+			"eventType": "variable",
+			"name": "isPlayerJumped",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 429916132620828
+		},
+		{
+			"eventType": "variable",
+			"name": "IsEntityInteractionActive",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 780727123847110
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 651650108460857,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "PlayerBox",
+					"sid": 140409170270664,
+					"parameters": {
+						"y": "Self.Y - PLAYER_SPEED_CURRENT"
+					}
+				}
+			],
+			"sid": 901295301409256
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 813118075007140,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "PlayerBox",
+					"sid": 902839261921510,
+					"parameters": {
+						"x": "Self.X - PLAYER_SPEED_CURRENT"
+					}
+				}
+			],
+			"sid": 375632763669604
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 856265305724627,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "PlayerBox",
+					"sid": 497222198838480,
+					"parameters": {
+						"y": "Self.Y + PLAYER_SPEED_CURRENT"
+					}
+				}
+			],
+			"sid": 583352987481179
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 767056756454655,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "PlayerBox",
+					"sid": 788229494599488,
+					"parameters": {
+						"x": "Self.X + PLAYER_SPEED_CURRENT"
+					}
+				}
+			],
+			"sid": 185286830715614
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 860590191194142,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 570780421377718,
+					"parameters": {
+						"variable": "PLAYER_SPEED_CURRENT",
+						"value": "PLAYER_SPEED_FASTED"
+					}
+				}
+			],
+			"sid": 440510541680678
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Клавиатура",
+					"sid": 679972896488253,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 343753969528748,
+					"parameters": {
+						"variable": "PLAYER_SPEED_CURRENT",
+						"value": "PLAYER_SPEED_NORMAL"
+					}
+				}
+			],
+			"sid": 136684970689234
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 207898773920528,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 673598596216082,
+					"parameters": {
+						"variable": "isPlayerJumped"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 776475964200162,
+					"parameters": {
+						"variable": "isPlayerJumped",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 670609604398246,
+					"parameters": {
+						"seconds": "3.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 939552459100045,
+					"parameters": {
+						"variable": "isPlayerJumped",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 204849423366091
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 794471048826523,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "pick-nearestfurthest",
+					"objectClass": "Entity",
+					"sid": 367295755028000,
+					"parameters": {
+						"which": "nearest",
+						"x": "PlayerBox.X",
+						"y": "PlayerBox.Y",
+						"z": "0",
+						"pick-all-tied": false
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 686048346014611,
+					"parameters": {
+						"first-value": "distance(PlayerBox.X , PlayerBox.Y , Entity.X , Entity.Y)",
+						"comparison": 3,
+						"second-value": "64"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 459207841220475,
+					"parameters": {
+						"variable": "IsEntityInteractionActive",
+						"value": "true"
+					}
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"",
+						"",
+						"const entity = runtime.objects.Entity.getFirstPickedInstance();",
+						"console.log(\"AAAAA\");",
+						"",
+						"if (globalThis.InteractManager) {",
+						"\tif (entity) {",
+						"",
+						"    console.log(\"BBBBB\");",
+						"    globalThis.InteractManager.tryInteract(runtime, entity);",
+						"\t} else {",
+						"\t\tconsole.log(\"CCCCC\");",
+						"\t}",
+						"} else {",
+						"    console.error(\"InteractManager не найден!\");",
+						"}",
+						""
+					]
+				}
+			],
+			"sid": 323574091530245
+		}
+	],
 	"sid": 648042193514149
 }
