@@ -318,6 +318,28 @@
 				}
 			],
 			"sid": 323574091530245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 169484332169160
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "PlayerBox",
+					"sid": 680193953029310,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 405249604882536
 		}
 	],
 	"sid": 648042193514149

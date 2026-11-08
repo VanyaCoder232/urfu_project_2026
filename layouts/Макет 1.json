@@ -49,6 +49,20 @@
 								"use-instance-tags": true,
 								"tags": ""
 							}
+						},
+						"Платформер": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 0,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": false
+							}
 						}
 					},
 					"materialSurfaceType": "smooth",
@@ -146,9 +160,9 @@
 						"tilemapData": {
 							"width": 56,
 							"height": 37,
-							"max-width": 56,
-							"max-height": 37,
-							"data": "2072x0"
+							"max-width": 106,
+							"max-height": 59,
+							"data": "6254x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -189,9 +203,9 @@
 				1
 			],
 			"backgroundColor": [
-				0,
-				0.8,
-				0.1607843137254902,
+				0.0392156862745098,
+				0.058823529411764705,
+				0.10980392156862745,
 				1
 			],
 			"isTransparent": false,

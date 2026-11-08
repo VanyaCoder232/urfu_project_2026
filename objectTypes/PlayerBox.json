@@ -25,6 +25,11 @@
 			"behaviorId": "solid",
 			"name": "Твёрдый",
 			"sid": 862707601387649
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Платформер",
+			"sid": 265709776689351
 		}
 	],
 	"effectTypes": [],
