@@ -1,0 +1,82 @@
+{
+	"name": "Door",
+	"plugin-id": "Sprite",
+	"sid": 432601161226883,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "targetLayout",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 498587495329023
+		},
+		{
+			"name": "targetDoorId",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 384421488466652
+		},
+		{
+			"name": "doorId",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 644330778943245
+		},
+		{
+			"name": "spawnOffsetX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 327165667550382
+		},
+		{
+			"name": "spawnOffsetY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 926152647836206
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твёрдый",
+			"sid": 660875175875679
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 50540,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 983827956168126,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

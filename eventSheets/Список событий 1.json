@@ -259,61 +259,22 @@
 					"parameters": {
 						"key": 69
 					}
-				},
-				{
-					"id": "pick-nearestfurthest",
-					"objectClass": "Entity",
-					"sid": 367295755028000,
-					"parameters": {
-						"which": "nearest",
-						"x": "PlayerBox.X",
-						"y": "PlayerBox.Y",
-						"z": "0",
-						"pick-all-tied": false
-					}
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 686048346014611,
-					"parameters": {
-						"first-value": "distance(PlayerBox.X , PlayerBox.Y , Entity.X , Entity.Y)",
-						"comparison": 3,
-						"second-value": "64"
-					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 459207841220475,
-					"parameters": {
-						"variable": "IsEntityInteractionActive",
-						"value": "true"
-					}
-				},
-				{
 					"type": "script",
 					"language": "javascript",
 					"script": [
-						"",
-						"",
-						"const entity = runtime.objects.Entity.getFirstPickedInstance();",
-						"console.log(\"AAAAA\");",
+						"// Проверяем, что мы в реальном мире (в мире снов E отвечает за стрельбу)",
+						"if (globalThis.GameStateContext?.currentState !== \"real\") return;",
 						"",
 						"if (globalThis.InteractManager) {",
-						"\tif (entity) {",
-						"",
-						"    console.log(\"BBBBB\");",
-						"    globalThis.InteractManager.tryInteract(runtime, entity);",
-						"\t} else {",
-						"\t\tconsole.log(\"CCCCC\");",
-						"\t}",
-						"} else {",
+						"    globalThis.InteractManager.handleInteractKey(runtime);",
+						"} ",
+						"else {",
 						"    console.error(\"InteractManager не найден!\");",
-						"}",
-						""
+						"}"
 					]
 				}
 			],
