@@ -1,5 +1,5 @@
 {
-	"name": "Макет 3",
+	"name": "mansion_cabinet",
 	"layers": [
 		{
 			"name": "Game",
@@ -187,8 +187,8 @@
 					"tags": "",
 					"instanceVariables": {
 						"targetLayout": "daive_room",
-						"targetDoorId": "door_daive_to_cabinet",
-						"doorId": "door_cabinet_to_daive",
+						"targetDoorId": "door_gg_to_cabinet",
+						"doorId": "door_cabinet_to_gg",
 						"spawnOffsetX": -48,
 						"spawnOffsetY": 0
 					},
