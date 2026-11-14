@@ -133,6 +133,22 @@ export const InteractActions = {
         if (globalThis.GameStateContext) {
             globalThis.GameStateContext.changeWorld("dream");
         }
+    },
+    "cabinet_desk": function* (runtime, entity) {
+        showDialoguePanel(runtime, "top", "Массивный дубовый стол. Бумаги разбросаны в спешке.");
+        showDialoguePanel(runtime, "bottom", "Среди черновиков лежит обгоревший конверт с печатью.");
+        yield; // Ждем второго нажатия E для закрытия
+
+        closeDialoguePanel(runtime);
+    },
+
+    // Осмотр книжного шкафа в кабинете
+    "cabinet_bookshelf": function* (runtime, entity) {
+        showDialoguePanel(runtime, "top", "Высокий книжный шкаф, забитый старыми архивами.");
+        showDialoguePanel(runtime, "bottom", "На корешках вытиснены даты десятилетней давности.");
+        yield;
+
+        closeDialoguePanel(runtime);
     }
 };
 

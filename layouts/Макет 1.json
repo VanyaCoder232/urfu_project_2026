@@ -160,9 +160,9 @@
 						"tilemapData": {
 							"width": 56,
 							"height": 37,
-							"max-width": 106,
-							"max-height": 59,
-							"data": "6254x0"
+							"max-width": 56,
+							"max-height": 37,
+							"data": "2072x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
