@@ -142,9 +142,9 @@
 					"sid": 971767950651581,
 					"tags": "",
 					"instanceVariables": {
-						"targetLayout": "",
-						"targetDoorId": "",
-						"doorId": "",
+						"targetLayout": "Room_Cabinet",
+						"targetDoorId": "door_cabinet_to_daive",
+						"doorId": "door_daive_to_cabinet",
 						"spawnOffsetX": 48,
 						"spawnOffsetY": 0
 					},
