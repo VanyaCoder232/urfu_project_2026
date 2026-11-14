@@ -89,7 +89,8 @@
 			"TileMap",
 			"Клавиатура",
 			"TileMap2",
-			"DreamFloor"
+			"DreamFloor",
+			"Door"
 		],
 		"subfolders": []
 	},
@@ -103,7 +104,8 @@
 	"layouts": {
 		"items": [
 			"Макет 1",
-			"Макет 2"
+			"Макет 2",
+			"daive_room"
 		],
 		"subfolders": []
 	},
@@ -355,5 +357,5 @@
 	},
 	"viewportWidth": 1704,
 	"viewportHeight": 956,
-	"firstLayout": "Макет 2"
+	"firstLayout": "daive_room"
 }
