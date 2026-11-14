@@ -89,7 +89,8 @@
 			"TileMap",
 			"Клавиатура",
 			"TileMap2",
-			"DreamFloor"
+			"DreamFloor",
+			"Door"
 		],
 		"subfolders": []
 	},
