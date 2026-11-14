@@ -15,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 17,
+					"uid": 25,
 					"sid": 895492234671002,
 					"tags": "",
 					"instanceVariables": {},
@@ -94,7 +94,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 22,
+					"uid": 26,
 					"sid": 671230885751070,
 					"tags": "",
 					"instanceVariables": {
@@ -138,25 +138,33 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 23,
+					"uid": 27,
 					"sid": 971767950651581,
 					"tags": "",
 					"instanceVariables": {
-						"targetLayout": "Room_Cabinet",
+						"targetLayout": "mansion_cabinet",
 						"targetDoorId": "door_cabinet_to_daive",
 						"doorId": "door_daive_to_cabinet",
 						"spawnOffsetX": 48,
 						"spawnOffsetY": 0
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Твёрдый": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
 					"materialSurfaceType": "smooth",
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 25,
-						"y": 547,
-						"width": 30,
-						"height": 60,
+						"x": 29.5,
+						"y": 555.5,
+						"width": 43,
+						"height": 77,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -220,7 +228,7 @@
 						"origin": "top-left",
 						"seams": "overlap"
 					},
-					"uid": 18,
+					"uid": 28,
 					"sid": 608874897253935,
 					"tags": "",
 					"instanceVariables": {},
@@ -260,7 +268,7 @@
 						"origin": "top-left",
 						"seams": "overlap"
 					},
-					"uid": 19,
+					"uid": 30,
 					"sid": 489177156930418,
 					"tags": "",
 					"instanceVariables": {},
@@ -310,7 +318,7 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 20,
+					"uid": 29,
 					"sid": 666640797352390,
 					"tags": "",
 					"instanceVariables": {},
@@ -360,7 +368,7 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 21,
+					"uid": 31,
 					"sid": 551173275953137,
 					"tags": "",
 					"instanceVariables": {},

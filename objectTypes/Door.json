@@ -41,7 +41,13 @@
 			"sid": 926152647836206
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твёрдый",
+			"sid": 660875175875679
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
